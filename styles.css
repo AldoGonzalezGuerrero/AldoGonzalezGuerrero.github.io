@@ -1,0 +1,169 @@
+/* Ensure full-screen background image */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #222; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #8a8aef;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #48487a; 
+  }
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/nunito/Nunito-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/nunito/Nunito-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/nunito/Nunito-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/nunito/Nunito-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nunito';
+    src: url('/nunito/Nunito-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+/* Add more @font-face rules if needed */
+
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif !important;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('img/bg.png'); /* Replace with your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.card {
+    display: flex;
+    width: 85vw; /* 85% of viewport width */
+    height: 85vh; /* 85% of viewport height */
+    border-radius: 15px; /* Slightly curved corners */
+    background-color: #222 !important; /* Darker color for the card */
+    color: #fff !important; /* White text */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional: adds shadow for better contrast */
+    overflow: hidden; /* Hide any overflowing content */
+    flex-direction: row !important;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #444; /* Darker background for the sidebar */
+    padding: 10px;
+    color: #fff;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px 0;
+    transition: hover 2s;
+}
+
+.sidebar a:hover {
+    color: #8a8aef; /* Highlight color on hover */
+}
+
+.selected {
+    color: #8a8aef !important; /* Highlight color on hover */
+}
+
+.icon {
+    font-size: 24px; /* Adjust icon size as needed */
+}
+
+.image-container {
+    display: flex;
+    width: 90%;
+    height: 90%;
+    object-fit: cover; 
+    margin-left: 20px; /* Added margin on the left */
+    padding: 5% 0 0 0; /* Removed left padding */
+}
+
+.large-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the container without distortion */
+    border-radius: 10px 10px 10px 10px;
+}
+
+.overlay-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 55%; /* Adjust for gradient size */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 70%);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 25%;
+    right: auto;
+    color: #fff;
+    text-align: center;
+}
+
+.content {
+    padding: 30px !important;
+    overflow-y: auto; /* Enable vertical scroll if content exceeds height */
+    color: #8d8e8f;
+    height: 100%;
+    background-color: #222; /* Slightly lighter background for contrast */
+}
+

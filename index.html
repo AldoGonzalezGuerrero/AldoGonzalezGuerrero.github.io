@@ -1,7 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="background"></div>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="row no-gutters">
+                <div class="col-sm-1 sidebar">
+                    <a class="selected" href="#"><span class="material-symbols-outlined">person</span><br>Info</a>
+                    <a href="#"><span class="material-symbols-outlined">verified</span><br>Skills</a>
+                    <a href="#"><span class="material-symbols-outlined">work_history</span><br>Experience</a>
+                    <a href="#"><span class="material-symbols-outlined">folder_open</span><br>Projects</a>
+                    <a href="#"><span class="material-symbols-outlined">alternate_email</span><br>Contact</a>
+                </div>
+                <div class="col-sm-auto image-container">
+                    <div class="image-overlay">
+                        <img src="img/selfie.png" alt="Large Image" class="large-image">
+                        <div class="overlay-gradient"></div>
+                        <div class="overlay-text">
+                            <h3>Aldo González</h3>
+                            <p style="color: #8a8aef;">Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 content">
+                    <br>
+                    <h1 style="color: #fff; font-weight: bold;">About me</h1>
+                    <br>
+                    <h4 style="font-style: italic;">
+                        <span style="color: #8a8aef;">23 years</span> / 
+                        <span style="color: #8a8aef;">Santiago de Chile</span>
+                    </h4>
+                    <br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non est nisi. Suspendisse eu massa eget lacus dignissim egestas a vitae felis. Donec sodales consectetur felis, sit amet consequat massa bibendum at. Vivamus vehicula, tortor eu tincidunt vehicula, purus dui varius enim, quis rutrum nisi mauris ut sapien. Integer tincidunt accumsan metus, in dignissim felis tincidunt quis. In a tempor erat. Fusce at dapibus odio. Quisque quis nunc quis ante consequat semper. Nulla ut elit faucibus, lobortis dolor ut, venenatis sem. Vestibulum et tellus est. Donec ornare suscipit tempus. Fusce lacinia, urna sed blandit efficitur, arcu urna consectetur enim, sit amet consequat sem nulla ac turpis.</p>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non est nisi. Suspendisse eu massa eget lacus dignissim egestas a vitae felis. Donec sodales consectetur felis, sit amet consequat massa bibendum at. Vivamus vehicula, tortor eu tincidunt vehicula, purus dui varius enim, quis rutrum nisi mauris ut sapien. Integer tincidunt accumsan metus, in dignissim felis tincidunt quis. In a tempor erat. Fusce at dapibus odio. Quisque quis nunc quis ante consequat semper. Nulla ut elit faucibus, lobortis dolor ut, venenatis sem. Vestibulum et tellus est. Donec ornare suscipit tempus. Fusce lacinia, urna sed blandit efficitur, arcu urna consectetur enim, sit amet consequat sem nulla ac turpis.</p>
+                    <hr>
+                    <!-- Add more dynamic content here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
